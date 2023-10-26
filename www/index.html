@@ -215,7 +215,9 @@
                 active = false;
                 alarm();
             }
-            if(rest <= period / 2){
+            if(rest == period){
+                $("body").css("background","skyblue");
+            }else if(rest <= period / 2){
                 $("body").css("background","lightgreen");
             }
         }
